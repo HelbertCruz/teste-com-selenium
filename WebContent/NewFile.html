@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+	function concatenar() {
+		var nome = document.form1.nome.value;
+		var sobrenome = document.form1.sobrenome.value;
+		alert("Olá " + nome +" "+sobrenome);
+	}
+</script>
+<body>
+	<form name="form1">
+		<label>Nome: </label> <input type="text" name="nome" id = "nome"> 
+		<label>Sobrenome:</label> <input type="text" name="sobrenome" id = "sobrenome"> <input type="submit"
+			value="Enviar" id = "enviar"onclick="concatenar()">
+	</form>
+</body>
+</html>

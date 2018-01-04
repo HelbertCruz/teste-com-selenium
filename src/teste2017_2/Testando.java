@@ -18,12 +18,12 @@ public class Testando {
 	public static void setup() {
 		System.setProperty("webdriver.gecko.driver", "C:\\Users\\User\\Desktop\\Selenium\\geckodriver.exe");
 		driver = new FirefoxDriver();
-		driver.get("file:///C:/Users/User/eclipse-workspace/Teste%20Selenium/WebContent/NewFile.html");
+		driver.get("file:///C:/Users/User/eclipse-workspace/Teste%20com%20selenium/WebContent/NewFile.html");
 		driver.manage().window().maximize();
 	}
 
 	@AfterClass
-	public static void tearDown() { 
+	public static void tearDown() {
 		driver.quit();
 	}
 
@@ -38,5 +38,4 @@ public class Testando {
 
 		assertEquals("Olá Helbert Cruz", textoDoAlert);
 	}
-
 }
